@@ -1,0 +1,88 @@
+/* Animación del título */
+.marquee {
+    width: 80%;
+    margin: 40px auto;
+    overflow: hidden;
+    border: 3px solid #f48fb1;
+    background-color: #fff0f5;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  
+  .titulo-desplazable {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 2rem;
+    color: #d81b60;
+    font-weight: bold;
+    animation: desplazamiento 10s linear infinite;
+  }
+  
+  @keyframes desplazamiento {
+    0% { transform: translateX(100vw); }
+    100% { transform: translateX(-100vw); }
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: "Comic Sans MS", sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffe6f0;
+  }
+  
+  /* Contenedor del catálogo */
+  #catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Tarjetas de películas */
+  .producto-card {
+    background-color: white;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .producto-card img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+  
+  .producto-card h2 {
+    font-size: 1.2em;
+    color: #ad1457;
+  }
+  
+  .producto-card p {
+    color: #6a1b9a;
+    font-size: 0.9em;
+  }
+  
+  .precio {
+    display: block;
+    font-size: 1.3em;
+    color: #e91e63;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .btn-comprar {
+    background-color: #f06292;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-comprar:hover {
+    background-color: #d81b60;
+  }
+  
